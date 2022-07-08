@@ -1,0 +1,209 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --number-color: #eff7fa;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.main-btn{
+    background-color: var(--red-color) ;
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+    background-color: var(--red-color) ;
+    color: var(--yellow-color);
+}
+
+
+/* start navbar */
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar .navbar-nav .nav-link{
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus{
+    color: var(--green-color);
+}
+.navbar .search {
+    border-left: 1px solid var(--green-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    border-color: white;
+    font-size: 25px
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded ="true"]{
+    border-color: var(--green-color);
+}
+.navbar svg {
+    color: var(--green-color);
+}
+
+/* end navbar */
+/* start landing */
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+
+
+/* end landing */
+/* start features */
+.main-title::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 120px;
+    background-color: var(--green-color);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder {
+    height: 200px;
+}
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder svg.number{
+    font-size: 12rem;
+    color: var(--number-color)
+}
+
+.features .feat .icon{
+    color: var(--green-color);
+}
+.features .feat h4{
+    color: var(--yellow-color);
+}
+/* end features */
+/* start our work */
+.our-work {
+    background-color: var(--number-color);
+}
+.our-work ul li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.our-work ul li.active{
+    background-color: var(--red-color);
+    color: var(--yellow-color)
+}
+.our-work ul li:not(.active):hover{
+    color: var(--red-color);
+}
+.our-work .box {
+    padding: 5px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .box::before{
+    content: "Application";
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color:var(--green-color);
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    right: 100%;
+
+}
+.our-work .box:hover::before{
+    right: 5px;
+}
+/* end our work */
+
+/* start stuff */
+.stuff p.description {
+    max-width: 500px;
+}
+/* end stuff */
+
+/* start team  */
+.team{
+    background-color: var(--number-color);
+}
+.team h2 {
+    color: var(--yellow-color);
+}
+.team .row .box h4{
+    background-color: var(--green-color);
+}
+/* end team  */
+.project {
+    background-color: var(--dark-color);
+}
+/* start blog */
+.card {
+    border: none;
+}
+/* end blog */
+input[type="text"]::-webkit-input-placeholder{
+    color: white;
+}
+/* start blog */
+.subscribe {
+    background-color: var(--yellow-color);
+}
+.subscribe input[type="text"]{
+    border: none;
+    border-bottom: 1px solid;
+}
+.subscribe input[type="text"]:focus{
+    outline: none;
+}
+.subscribe input[type="submit"]{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+/* end blog */
+.footer {
+    background-color: var(--dark-color);
+}
+.footer .copy1 {
+    color: var(--green-color);
+}
+
+.footer .copy2 {
+    color: var(--yellow-color);
+}
+.footer li a svg{
+    width: 20px;
+    height: 20px;
+
+}
+.footer li:hover {
+    color: var(--yellow-color);
+}
+
+.facebook {
+    background-color: #1877f2;
+}
+.twitter {
+    background-color: #1da1f2;
+}
+.linkedin {
+    background-color: #0077b5;
+}
+.youtube {
+    background-color: #ff0000;
+}
